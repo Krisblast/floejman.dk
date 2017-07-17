@@ -1,0 +1,67 @@
+<div class="aniFadeIn">
+  <main-container>
+    <div class="container hidden-sm hidden-xs">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="picture-me">
+            <img src="images/kristian.png" alt="">
+          </div>
+          <h1 class="text-me">Hello! I'm <span style="color:whitesmoke;"> Kristian Fløjman</span> <br> <span>- Learn about me and my projects</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hidden-md hidden-lg" style="text-align: center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="picture-me">
+            <img style="width: inherit;height: 190px;margin-top: 15px;z-index: 7;position: relative;top: 0;"
+                 src="images/kristian.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="z-index: 6;position: relative;font-weight: bold;color: white" class="">Hello! I'm <span
+            style="color:whitesmoke;"> Kristian Fløjman</span> <br> <span>- Learn about me and my projects</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <wave></wave>
+    <wave wave-type="'waveTwo'"></wave>
+    <wave wave-type="'waveThree'"></wave>
+    <overlapper-white></overlapper-white>
+
+  </main-container>
+
+
+  <second-container>
+    <div class="container">
+
+      <h1 style="margin-bottom: 40px;font-weight: bold;font-size: 36px">Who Am I?</h1>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 style="margin-bottom: 60px;margin-top: 15px">I'm a creative, hardworking frontend developer with an educational background in media science. I enjoy entrepreneurship and have participated in various startup</h2>
+        </div>
+      </div>
+
+      <h1 style="margin-bottom: 40px;font-weight: bold;font-size: 36px">Experience</h1>
+
+      <div class="row">
+        <div class="col-md-6" ng-repeat="skill in main.skills.major">
+          <div class="well box{{$index+1}}">
+            <img class="angular-icon" ng-src="{{skill.logo}}" alt="">
+            <h4 ng-bind="skill.headline"></h4>
+
+            <p ng-bind="skill.text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <overlapper-black></overlapper-black>
+  </second-container>
+
+</div>

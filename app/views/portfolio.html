@@ -1,0 +1,47 @@
+<div class="aniFadeIn">
+  <main-container>
+    <div class="container">
+      <div class="row" style="padding-top: 74px">
+        <div class="col-md-12" style="text-align: center;color: white;z-index: 10">
+          <h1 style="font-size: 36px;font-weight: bold">Portfolio</h1>
+          <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+        </div>
+      </div>
+    </div>
+
+    <overlapper-white></overlapper-white>
+  </main-container>
+
+  <portfolio-container-component odd="!$odd" portfolio-item="item" use-ani-scroll="item.aniScroll" ng-repeat="item in portfolio.portfolioItems"></portfolio-container-component>
+
+
+  <main-container min-height="750">
+    <div class="container">
+      <div class="row" style="padding-top: 60px">
+        <div class="col-md-12" style="text-align: center;color: white;z-index: 10">
+          <h1 style="font-size: 36px;font-weight: bold">Other projects</h1>
+          <p style="font-size: 18px;">Other projects I have made throughout the years. <br> None of them are really close to complete and some haven't been maintained very well but ENJOY</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" style="padding-top: 60px">
+        <div class="col-xs-6 col-md-4 aniFadeIn" ani-view  ng-repeat="project in portfolio.otherProjects">
+          <h4 style="color: whitesmoke"> {{project.headline}}</h4>
+          <a target="_blank" ng-href="{{project.link}}" class="thumbnail">
+            <img style="height: 160px;width: 100%" ng-src="images/Projects/{{project.id}}.PNG" alt="...">
+          </a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <overlapper-black></overlapper-black>
+  </main-container>
+
+
+
+
+</div>

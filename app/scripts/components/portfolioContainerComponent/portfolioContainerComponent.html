@@ -1,0 +1,39 @@
+<div ng-if="$ctrl.useAniScroll === true" class="mainOne portfolio-container skill-bar" ani-view ng-class="{'container-white': $ctrl.odd}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 portfolio-image">
+        <a ng-href="#/portfolio/{{$ctrl.portfolioItem.id}}"><img class="logo" ng-class="{'reepay-logo': $ctrl.portfolioItem.id === 'reepay'}" ng-src="{{$ctrl.portfolioItem.image}}" alt=""></a>
+      </div>
+
+      <div class="col-md-6 portfolio-content" style="text-align: left;color: white;padding-top: 55px;">
+        <h1 ng-bind="$ctrl.portfolioItem.headline"></h1>
+        <p ng-bind="$ctrl.portfolioItem.text"></p>
+        <a class="pull-right" ng-href="#/portfolio/{{$ctrl.portfolioItem.id}}">Read more</a>
+      </div>
+    </div>
+  </div>
+  <overlapper-white ng-if="!$ctrl.odd"></overlapper-white>
+  <overlapper-black ng-if="$ctrl.odd"></overlapper-black>
+</div>
+
+
+
+
+<div ng-if="$ctrl.useAniScroll === false" class="mainOne portfolio-container " ng-class="{'container-white': $ctrl.odd}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 portfolio-image">
+        <a ng-href="#/portfolio/{{$ctrl.portfolioItem.id}}"><img class="logo" ng-class="{'reepay-logo': $ctrl.portfolioItem.id === 'reepay'}" ng-src="{{$ctrl.portfolioItem.image}}" alt=""></a>
+      </div>
+
+      <div class="col-md-6 portfolio-content" style="text-align: left;color: white;padding-top: 55px;">
+        <h1 ng-bind="$ctrl.portfolioItem.headline"></h1>
+        <p ng-bind="$ctrl.portfolioItem.text"></p>
+        <a class="pull-right" ng-href="#/portfolio/{{$ctrl.portfolioItem.id}}">Read more</a>
+      </div>
+    </div>
+  </div>
+  <overlapper-white ng-if="!$ctrl.odd"></overlapper-white>
+  <overlapper-black ng-if="$ctrl.odd"></overlapper-black>
+</div>
+
